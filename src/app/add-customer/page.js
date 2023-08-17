@@ -29,7 +29,7 @@ const AddCustomer = () => {
   const onSubmit = async (values, { resetForm }) => {
     try {
       // Send a POST request to add a new customer
-      const response = await fetch("http://localhost:8000/api/v1/customer/add-customer", {
+      const response = await fetch("https://customer-management-server-4xbj.onrender.com/api/v1/customer/add-customer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

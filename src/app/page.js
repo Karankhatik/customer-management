@@ -18,7 +18,7 @@ export default function Home() {
   // Fetch customer data from API
   const getData = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/v1/customer/customers");
+      const response = await fetch("https://customer-management-server-4xbj.onrender.com/api/v1/customer/customers");
       const data = await response.json();
       setCustomers(data.customers);
     } catch (error) {
@@ -35,7 +35,7 @@ export default function Home() {
     }
 
     try {
-      const response = await fetch(`http://localhost:8000/api/v1/customer/delete-customer/${email}`, {
+      const response = await fetch(`https://customer-management-server-4xbj.onrender.com/${email}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
