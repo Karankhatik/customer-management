@@ -35,7 +35,7 @@ export default function Home() {
     }
 
     try {
-      const response = await fetch(`https://customer-management-server-4xbj.onrender.com/${email}`, {
+      const response = await fetch(`https://customer-management-server-4xbj.onrender.com/api/v1/customer/delete-customer/${email}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
