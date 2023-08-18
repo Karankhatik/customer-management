@@ -1,4 +1,4 @@
-import React from 'react';
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -7,17 +7,12 @@ export default function NotFound() {
       <p className="text-lg text-gray-600">
         Oops! The page you're looking for could not be found.
       </p>
-      <img
-        src="/path/to/your/error/image.png"
-        alt="404 Not Found"
-        className="mt-8 max-w-sm"
-      />
-      <a
+      <Link
         href="/"
         className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300"
       >
         Go to Home
-      </a>
+      </Link>
     </div>
   );
 }
