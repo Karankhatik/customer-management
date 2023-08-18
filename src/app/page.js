@@ -30,8 +30,9 @@ export default function Home() {
   const onDelete = async (email) => {
     const confirmed = window.confirm("Are you sure you want to delete this customer?");
     if (!confirmed) {
-      return; // User cancelled deletion
+       // User cancelled deletion
       toast.info('Customer deletion cancelled!');
+      return;
     }
 
     try {

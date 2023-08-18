@@ -56,7 +56,7 @@ export default function ViewMore({ params }) {
 
   return (
     <div className="flex justify-center mt-4 items-center">
-      <div className="p-4 w-1/2">
+      <div className="p-4">
         {customer ? (
           <div className="bg-white rounded-lg shadow-md p-2">
             <div className="flex items-center mb-4">
